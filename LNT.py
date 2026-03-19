@@ -22,7 +22,7 @@ def multiply_lists(A, B):
 
 
 def benchmark_matmul(sizes=[800, 1200, 2000, 3000], repeats=3):
-    print("\nСравнение времени матричного умножения (A @ B)")
+    print("\nСравнение времени матричного умножения (A * B)")
     print("Повторений для каждого размера:", repeats, "\n")
 
     header = f"{'Размер':>8}  {'Python lists':>14}   {'numpy':>12}   {'torch CPU':>12}   {'torch CUDA':>12}"
