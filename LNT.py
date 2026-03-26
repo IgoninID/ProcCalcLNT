@@ -21,7 +21,7 @@ def multiply_lists(A, B):
     return C
 
 
-def benchmark_matmul(sizes=[800, 1200, 2000, 3000], repeats=3):
+def bench_matmul(sizes=[800, 1200, 2000, 3000], repeats=3):
     print("\nСравнение времени матричного умножения (A * B)")
     print("Повторений для каждого размера:", repeats, "\n")
 

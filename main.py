@@ -10,7 +10,7 @@ if __name__ == "__main__":
         print("Устройство:", torch.cuda.get_device_name(0))
         print("CUDA версия :", torch.version.cuda)
 
-    benchmark_matmul(
+    bench_matmul(
     sizes = [500, 1000, 2000, 3000],
     repeats = 5
     )
