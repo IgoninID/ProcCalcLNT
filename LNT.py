@@ -6,7 +6,7 @@ import torch
 
 
 def multiply_lists(A, B):
-    """Чистый Python, списки списков"""
+    """Чистый Python"""
     n = len(A)
     m = len(B[0])
     p = len(B)
@@ -91,7 +91,7 @@ def bench_matmul(sizes=[800, 1200, 2000, 3000], repeats=3):
             t = np.mean(times["lists"])
             row += f"{t:12.3f} s   "
         else:
-            row += f"{'--- слишком медленно ---':>14}   "
+            row += f"{' слишком медленно ':>14}   "
 
         row += f"{np.mean(times['numpy']):12.3f} s   "
         row += f"{np.mean(times['torch_cpu']):12.3f} s   "
@@ -99,7 +99,7 @@ def bench_matmul(sizes=[800, 1200, 2000, 3000], repeats=3):
         if has_cuda and times["torch_gpu"]:
             row += f"{np.mean(times['torch_gpu']):12.3f} s"
         elif has_cuda:
-            row += "   --- error ---"
+            row += "    error "
         else:
             row += "      нет GPU"
 

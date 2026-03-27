@@ -11,6 +11,6 @@ if __name__ == "__main__":
         print("CUDA версия :", torch.version.cuda)
 
     bench_matmul(
-    sizes = [500, 1000, 2000, 3000],
+    sizes = [500, 1000, 1200, 2000, 3000, 5000],
     repeats = 5
     )
